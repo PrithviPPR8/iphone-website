@@ -2,9 +2,9 @@ import React from 'react'
 
 const Accessories = () => {
   return (
-    <div className="h-screen">
+    <section className="h-screen">
       Accessories
-    </div>
+    </section>
   )
 }
 
