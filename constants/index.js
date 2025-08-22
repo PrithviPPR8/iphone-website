@@ -30,7 +30,7 @@ const features = [
     {
         imgUrl: "/images/camera.jpg",
         title: "Cutting-Edge Cameras",
-        description: "Picture your best photos and videos.",
+        description: "Picture your best \n photos and videos.",
     },
     {
         imgUrl: "/images/battery.jpg",
@@ -40,7 +40,7 @@ const features = [
     {
         imgUrl: "/images/innovation.jpg",
         title: "Innovation",
-        description: "Beautiful and durable, by design.",
+        description: "Beautiful and durable, \n by design.",
     },
     {
         imgUrl: "/images/environment.jpg",
@@ -50,17 +50,17 @@ const features = [
     {
         imgUrl: "/images/privacy.jpg",
         title: "Privacy",
-        description: "Your data. Just where you want it.",
+        description: "Your data. \nJust where you want it.",
     },
     {
         imgUrl: "/images/personalize.jpg",
         title: "Personalize your iPhone",
-        description: "Make it you. Through and through.",
+        description: "Make it you. \nThrough and through.",
     },
     {
         imgUrl: "/images/safety.jpg",
         title: "Peace of Mind",
-        description: "Helpful features. Just in Case.",
+        description: "Helpful features. \nJust in Case.",
     },
 ]
 
