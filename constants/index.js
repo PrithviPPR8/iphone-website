@@ -64,7 +64,43 @@ const features = [
     },
 ]
 
+const latestPhones = [
+    {
+        imgUrl: "/images/iphone_16pro.png",
+        title: "iPhone 16 Pro",
+        tagline: "The ultimate iPhone.",
+        cost: "From ₹119900.00 \nor ₹19150.00/mo. for 6 mo.",
+        learnMoreLink: "https://www.apple.com/in/iphone-16-pro/",
+        buyLink: "https://www.apple.com/in/shop/goto/buy_iphone/iphone_16_pro",
+    },
+    {
+        imgUrl: "/images/iphone_16.png",
+        title: "iPhone 16",
+        tagline: "A total powerhouse.",
+        cost: "From ₹79900.00 \nor ₹12483.00/mo. for 6 mo.",
+        learnMoreLink: "https://www.apple.com/in/iphone-16/",
+        buyLink: "https://www.apple.com/in/shop/goto/buy_iphone/iphone_16",
+    },
+    {
+        imgUrl: "/images/iphone_16e.png",
+        title: "iPhone 16e",
+        tagline: "Latest iPhone. Greatest price.",
+        cost: "From ₹59900.00 \nor ₹9150.00/mo. for 6 mo.",
+        learnMoreLink: "https://www.apple.com/in/iphone-16e/",
+        buyLink: "https://www.apple.com/in/shop/goto/buy_iphone/iphone_16e",
+    },
+    {
+        imgUrl: "/images/iphone_15.png",
+        title: "iPhone 15",
+        tagline: "As amazing as ever.",
+        cost: "From ₹69900.00 \nor ₹10983.00/mo. for 6 mo.",
+        learnMoreLink: "https://www.apple.com/in/iphone-15/specs/",
+        buyLink: "https://www.apple.com/in/shop/goto/buy_iphone/iphone_15",
+    },
+]
+
 export {
     navLinks,
     features,
+    latestPhones,
 };

@@ -11,7 +11,7 @@ import {
 
 const Features = () => {
   return (
-    <div className="">
+    <div className="mb-12">
       <h1 className="text-5xl font-semibold mb-8 ml-20">Get to know iPhone</h1>
       <div className="mx-16">
         {/* 33% of the carousel width. */}
