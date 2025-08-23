@@ -172,9 +172,27 @@ const buyingOptions = [
     },
 ]
 
+const accessories = [
+    {
+        title: "iPhone accessories",
+        description: "Explore colourful cases, USB‑C power adapters, \nMagSafe accessories and more.",
+        link_text: "Shop iPhone accessories",
+        link_url: "https://www.apple.com/in/shop/goto/iphone/accessories",
+        img_url: "/images/Iphone Accessories.jpg",
+    },
+    {
+        title: "AirTag",
+        description: "Attach one to your keys. Put another in your \nbackpack. If they’re misplaced, just use the Find My app.",
+        link_text: "Buy",
+        link_url: "https://www.apple.com/in/shop/goto/buy_airtag/airtag",
+        img_url: "/images/AirTag.jpg",
+    },
+]
+
 export {
     navLinks,
     features,
     latestPhones,
     buyingOptions,
+    accessories,
 };
