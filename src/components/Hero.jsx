@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-      <section className="h-screen">
+      <section className="h-screen" id="hero">
           <div className="flex md:flex-row flex-col md:justify-between mx-20 my-10">
             <h1 className="md:text-5xl text-4xl font-semibold">iPhone</h1>
             <h3 className="md:text-3xl text-2xl md:mt-3 mt-3 font-semibold">Designed to be loved.</h3>

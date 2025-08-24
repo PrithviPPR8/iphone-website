@@ -8,7 +8,7 @@ const navLinks = [
         title: "Features",
     },
     {
-        id: "line-up",
+        id: "lineUp",
         title: "Line-up",
     },
     {

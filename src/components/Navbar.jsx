@@ -10,7 +10,9 @@ const Navbar = () => {
         <div>
             <ul className="flex flex-row mr-4 gap-6">
                 {navLinks.map((link) => (
-                    <li className="text-xl text-gray-700 cursor-pointer">{link.title}</li>
+                    <li className="text-xl text-gray-700 cursor-pointer" key={link.id}>
+                        <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
                 ))}
             </ul>
         </div>
