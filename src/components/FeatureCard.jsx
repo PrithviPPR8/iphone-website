@@ -4,7 +4,7 @@ import { Plus } from 'lucide-react';
 const FeatureCard = ({ imgUrl, title, description }) => {
   return (
     <div className="relative hover:scale-102 transition-all duration-300 ease-out cursor-pointer rounded-3xl overflow-hidden transform-gpu bg-transparent">
-      <img src={imgUrl} className="h-[92%] w-[92%] object-cover rounded-3xl m-auto mt-[4%]" />
+      <img src={imgUrl} className="h-[92%] w-[92%] object-cover rounded-3xl m-auto mt-[4%]" alt="iPhone feature" />
       <div className="absolute top-10 left-11">
         <h3 className={`${title === "Innovation" || title === "Environment" ? "text-black" : "text-white"} text-2xl font-medium`}>
           {title}
