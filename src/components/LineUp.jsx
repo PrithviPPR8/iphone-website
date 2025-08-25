@@ -56,25 +56,25 @@ const LineUp = () => {
 
   return (
     <div className="bg-gray-100" id="lineUp" ref={ref}>
-      <div className="flex flex-row justify-between mx-20 pt-12 mb-4" id="text">
-        <h1 className="text-5xl font-semibold">Explore the line-up.</h1>
+      <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20 pt-12 mb-4" id="text">
+        <h1 className="text-5xl font-semibold text-center sm:text-left">Explore the line-up.</h1>
         <a 
           href="https://www.apple.com/in/iphone/compare/"
           target="_blank"
-          className="text-blue-600 text-xl pt-4"
+          className="text-blue-600 text-xl text-center pt-4"
         >
           Compare all models &gt;
         </a>
       </div>
 
       {isVisible && (
-        <div className="mx-16 pb-12">
+        <div className="mx-4 sm:mx-16 pb-12">
           <Carousel>
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent>
               {latestPhones.map((phone, index) => (
                 <CarouselItem
                   key={index}
-                  className="basis-1/3 pl-2 md:pl-4 lineUpCards-item"
+                  className="basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4 lineUpCards-item"
                 >
                   <div className="h-full">
                     <LatestPhoneCard {...phone} />
@@ -82,8 +82,8 @@ const LineUp = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="cursor-pointer" />
-            <CarouselNext className="cursor-pointer" />
+            <CarouselPrevious className="absolute md:left-[-20px] left-2 top-1/2 -translate-y-1/2 cursor-pointer z-10" />
+            <CarouselNext className="absolute md:right-[-20px] right-2 top-1/2 -translate-y-1/2 cursor-pointer z-10" />
           </Carousel>
         </div>
       )}

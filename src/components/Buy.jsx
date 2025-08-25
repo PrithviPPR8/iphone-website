@@ -56,11 +56,11 @@ const Buy = () => {
   return (
     <div className="bg-gray-100 pb-6" id="buy" ref={ref}>
       <div
-        className="flex flex-row justify-between mx-20 pt-12 mb-4"
+        className="flex flex-col items-center sm:flex-row sm:justify-between mx-4 sm:mx-20 pt-12 mb-4 text-center sm:text-left"
         id="buy-section-text"
       >
-        <h1 className="text-5xl font-semibold">
-          Why Apple is the best <br /> place to buy iPhone
+        <h1 className="text-4xl sm:text-5xl font-semibold">
+          Why Apple is the best <br className="sm:hidden" /> place to buy iPhone
         </h1>
         <a
           href="https://www.apple.com/in/shop/goto/buy_iphone"
@@ -72,24 +72,24 @@ const Buy = () => {
       </div>
 
       {isVisible && (
-        <div className="mx-16 pb-12 mt-10">
+        <div className="mx-4 sm:mx-16 pb-12 mt-10">
           <Carousel>
             <CarouselContent>
               {buyingOptions.map((option, index) => (
-                <CarouselItem
-                  key={index}
-                  className="basis-1/3 buy-section-cards"
-                >
-                  <BuyingOptionsCard
-                    icon_img={option.icon_img}
-                    title={option.title}
-                    description={option.description}
-                  />
-                </CarouselItem>
-              ))}
+                  <CarouselItem
+                    key={index}
+                    className="basis-full md:basis-1/2 lg:basis-1/3 buy-section-cards"
+                  >
+                    <BuyingOptionsCard
+                      icon_img={option.icon_img}
+                      title={option.title}
+                      description={option.description}
+                    />
+                  </CarouselItem>
+                ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="absolute md:left-[-40px] left-[-8px] top-1/2 -translate-y-1/2 cursor-pointer z-10" />
+            <CarouselNext className="absolute md:right-[-40px] right-[-8px] top-1/2 -translate-y-1/2 cursor-pointer z-10" />
           </Carousel>
         </div>
       )}

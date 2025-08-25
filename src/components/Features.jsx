@@ -56,17 +56,19 @@ const Features = () => {
 
   return (
     <div id="features" className="mb-12" ref={ref}>
-      <h1 id="h1" className="text-5xl font-semibold mb-8 ml-20">
+      <h1 id="h1" className="text-5xl font-semibold mb-8 text-center sm:text-left sm:ml-20">
         Get to know iPhone
       </h1>
       
       {isVisible && (
-        <div className="mx-16">
-          {/* 33% of the carousel width. */}
+        <div className="mx-4 sm:mx-16 md:w-[90%] w-[90%]">
           <Carousel>
             <CarouselContent>
               {features.map((feature, index) => (
-                <CarouselItem key={index} className="basis-1/3 featureCards-item">
+                <CarouselItem 
+                  key={index} 
+                  className="w-[calc(100%-2rem)] mx-auto md:basis-1/2 md:mx-0 lg:basis-1/3 featureCards-item"
+                >
                   <FeatureCard 
                     imgUrl={feature.imgUrl}  
                     title={feature.title}
@@ -75,8 +77,8 @@ const Features = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="cursor-pointer" />
-            <CarouselNext className="cursor-pointer" />
+            <CarouselPrevious className="absolute md:left-[-30px] left-[-14px] top-1/2 -translate-y-1/2 cursor-pointer z-10" />
+            <CarouselNext className="absolute md:right-[-30px] right-[-14px] top-1/2 -translate-y-1/2 cursor-pointer z-10" />
           </Carousel>
         </div>
       )}

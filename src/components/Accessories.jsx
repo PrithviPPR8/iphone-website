@@ -48,8 +48,8 @@ const Accessories = () => {
 
   return (
     <div className="bg-white pb-16" id="accessories" ref={ref}>
-      <div className="flex flex-row justify-between mx-20 pt-16 mb-12" id="accessories-section-text">
-        <h1 className="text-5xl font-semibold text-gray-900">iPhone essentials.</h1>
+      <div className="flex flex-col sm:flex-row justify-between items-center mx-4 sm:mx-20 pt-16 mb-12 text-center sm:text-left" id="accessories-section-text">
+        <h1 className="text-4xl sm:text-5xl font-semibold text-gray-900">iPhone essentials.</h1>
         <a 
           href="https://www.apple.com/in/shop/goto/iphone/accessories"
           target="_blank"
@@ -59,7 +59,7 @@ const Accessories = () => {
         </a>
       </div>
 
-      <div className="flex flex-row gap-8 mx-20 min-h-[500px] accessories-section-cards">
+      <div className="flex flex-col sm:flex-row gap-8 mx-4 sm:mx-20 min-h-[500px] accessories-section-cards">
         {accessories.map((accessory, index) => (
           <AccessoryCard 
             key={index}

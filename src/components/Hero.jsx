@@ -101,9 +101,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative w-full mb-16" ref={containerRef}>
+    <section id="hero" className="relative w-full mb-6" ref={containerRef}>
       {/* Heading */}
-      <div className="flex md:flex-row flex-col md:justify-between mx-24 my-10">
+      <div className="flex md:flex-row flex-col md:justify-between mx-24 mt-10">
         <h1 className="md:text-5xl text-4xl font-semibold">iPhone</h1>
         <h3 className="md:text-3xl text-2xl md:mt-3 mt-3 font-semibold">
           Designed to be loved.
@@ -111,7 +111,7 @@ const Hero = () => {
       </div>
 
       {/* Video Container with GSAP scaling effect */}
-      <div className="relative w-full mt-16 px-2 flex justify-center">
+      <div className="relative w-full md:mt-10 mt-5 px-2 flex justify-center">
         <div 
           ref={videoWrapperRef}
           className="relative w-full max-w-full"
@@ -128,7 +128,7 @@ const Hero = () => {
             className="w-full object-cover"
             style={{ 
               height: '90vh', // Fixed height instead of maxHeight
-              minHeight: '500px', // Minimum height for smaller screens
+              minHeight: '600px', // Minimum height for smaller screens
               borderRadius: '0px' // Initial state, GSAP will animate this
             }}
           >
